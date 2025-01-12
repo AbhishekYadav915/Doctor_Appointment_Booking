@@ -11,12 +11,16 @@ import About from './pages/About';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+
+
 const App = () => {
+
+  // const [curr ,setCurr] = useState(false);
   return (
     <div className='mx-4 sm:mx-[10%]'>
-      <Navbar/>
+      <Navbar/>   
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home/>} />
         <Route path='/doctors' element={<Doctors />} />
         <Route path='/doctors/:speciality' element={<Doctors />} />
         <Route path='/login' element={<Login />} />
